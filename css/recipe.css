@@ -1,0 +1,184 @@
+.recipe-container {
+  padding: 50px 50px;
+
+
+}
+.recipe-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.recipe-col-1 {
+  flex-basis: 35%;
+}
+
+.recipe-col-1 img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.recipe-col-2 {
+  flex-basis: 60%;
+}
+
+.recipe-col-2 .recipe-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.fa {
+  color: #ffa500;
+  margin-top: 5px;
+}
+
+.prep-cook-info,
+.prep-cook-desc {
+  font-family: Raleway;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.prep-cook-desc {
+  font-style: italic;
+}
+
+.recipe-tab-title {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.recipe-tab-link {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.recipe-tab-link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ffa500;
+  position: absolute;
+  left: 0;
+  right: -8px;
+  top: 30px;
+  transition: 0.5s;
+}
+
+.recipe-tab-link.active-link::after {
+  width: 50%;
+}
+
+.recipe-tab-contents ul li,
+.recipe-tab-contents ol li {
+  font-family: Raleway;
+  margin: 5px;
+}
+
+.recipe-tab-contents {
+  display: none;
+}
+
+.recipe-tab-contents.active-tab {
+  display: block;
+}
+
+/* Responsive Layout */
+@media (max-width: 480px) {
+  .recipe-col-1, 
+  .recipe-col-2 {
+    flex-basis: 100%;
+  }
+  
+  .recipe-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .recipe-col-2 .recipe-title {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+
+  .fa,
+  .prep-cook-info,
+  .prep-cook-desc {
+    font-size: 14px;
+  }
+
+  .recipe-tab-title {
+    display: flex;
+    margin: 10px 0 30px;
+  }
+  
+  .recipe-tab-link {
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .recipe-tab-link::after { 
+    right: -8px;
+    top: 30px;
+    transition: 0.5s;  
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-col-1, 
+  .recipe-col-2 {
+    flex-basis: 100%;
+  }
+  
+  .recipe-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .recipe-col-2 .recipe-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .recipe-col-2 {
+    margin-bottom: 10vh;
+  }
+
+  .fa,
+  .prep-cook-info,
+  .prep-cook-desc {
+    font-size: 20px;
+  }
+
+  .recipe-tab-title {
+    display: flex;
+    margin: 10px 0 30px;
+  }
+  
+  .recipe-tab-link {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .recipe-tab-contents ul li,
+  .recipe-tab-contents ol li {
+    font-size: 20px;
+  }
+
+  .recipe-tab-link::after { 
+    right: -8px;
+    top: 30px;
+    transition: 0.5s;
+  }
+}
