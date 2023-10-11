@@ -3,14 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Odin Recipes</title>
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/recipe-card.css">
+  <link rel="stylesheet" href="../css/recipe.css">
 </head>
+
 <body>
-  <h1>Odin Recipes</h1>
-  <ul>
-    <li><a href="recipes/adobo.html" target="_blank">Pork Adobo</a></li>
-    <li><a href="recipes/sisig.html" target="_blank">Sisig</a></li>
-    <li><a href="recipes/lumpia.html" target="_blank">Lumpia Shanghai</a></li>
-  </ul>
+  <header>
+    <div>
+      <h1 class="site-title">ODIN RECIPES</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-card">
+      <img src="https://www.teahub.io/photos/full/129-1293990_photo-wallpaper-food-meat-pumpkin-salad-snacks-meze.jpg">
+      <div class="hero-content">
+        <h2>Cooking Made Easier.</h2>
+      </div>
+	</section>
+
+  <section class="recipe-grid">
+        <div class="recipe-card">
+          <a href="recipes/adobo.html" target="_blank"> <img src="https://www.foodbox.co.nz/cdn/shop/articles/63a101239eeb4e136f372977_639a894ac8ab2f1f8029cc4a_Pork_2520adobo_2520720x720px_1024x.jpg?v=1675246987"></a>
+
+          <div class="recipe-card-content">
+            <h2>Adobo</h2>
+            <p class="recipe-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              4.3
+            </p>
+            <p class="prep-cook-info"><strong>Prep:</strong> 20mins  | <strong>Cook:</strong> 1hr 30mins</p>
+            <p>Pork adobo is a great and hearty Filipino dish that blends savory soy sauce, acidic vinegar, and fragrant garlic to make a rich and flavorful sauce that properly seasoned meat.</p>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card">
+          <a href="recipes/lumpia.html" target="_blank">  <img src="https://www.allrecipes.com/thmb/BMBHDoOItoUIogk7pkcyEN-ZV24=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8145413-1a0cce63131d4ba0822e866d069747a5.jpg"></a> 
+
+          <div class="recipe-card-content">
+            <h2>Lumpia Shanghai</h2>
+            <p class="recipe-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              4.3
+            </p>
+            <p class="prep-cook-info"><strong>Prep:</strong> 45mins  | <strong>Cook:</strong> 10mins</p>
+            <p>Lumpia Shanghai, a robust and delectable appetizer or main dish filled with ground chicken, carrots, and green onions, is sure to please.</p>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <a href="recipes/sisig.html" target="_blank">  <img src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/Sizzling-Sisig-640.jpg"></a>
+
+          <div class="recipe-card-content">
+            <h2>Sisig</h2>
+            <p class="recipe-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              4.3
+            </p>
+            <p class="prep-cook-info"><strong>Prep:</strong> 12mins  | <strong>Cook:</strong> 1hr 30mins</p>
+            <p>Sisig is a Filipino dish made from pork jowl and ears, pork belly, and chicken liver, which is usually seasoned with calamansi, onions, and chili peppers. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> <strong> The Odin Project </strong>| <strong> Odin Recipe  </strong> | No copyright infringement is intended. I do not own nor claim to own the rights to any of the recipes and images shared. </p>
+  </footer>
+
 </body>
 </html>

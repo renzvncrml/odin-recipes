@@ -3,39 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sisig | Recipes</title>
+
+  <title>Sisig | Recipe</title>
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/recipe.css">
 </head>
 <body>
-  <h1>Sisig</h1>
-  <img src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-2.jpg">
+  <header>
+    <h1 class="site-title">ODIN RECIPES</h1>
+  </header>
 
-  <h3>Description</h3>
-  <p>
-    Sisig is a Filipino dish made from pork jowl and ears, pork belly, and chicken liver, which is usually seasoned with calamansi, onions, and chili peppers. 
-    It originates from the Pampanga region in Luzon. 
-    Sisig is a staple of Kapampangan cuisine
-  </p>
+  <main>
+    <div class="recipe-container">
+      <div class="recipe-row">
+        <div class="recipe-col-1">
+          <img src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/Sizzling-Sisig-640.jpg"></a>
+        </div>
 
-  <h3>Ingridients</h3>
-  <ul>
-    <li>500 grams ppork belly <em>sliced about 1/2 inch thick</em> </li>
-    <li>salt and pepper</li>
-    <li>1 red onion <em>finely chopped</em> </li>
-    <li>1/2 lemon or 3-4 calamansi juice</li>
-    <li>1-2 chili peppers <em>minced</em> </li>
-    <li>1/2 tbsp soy sauce</li>
-    <li>1/8 tsp ground black pepper</li>
-    <li>egg</li>
-  </ul>
+        <div class="recipe-col-2">
+          <h1 class="recipe-title">Sisig</h1>
+                <p class="recipe-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  4.3 / 5
+                </p>
+                <p class="prep-cook-info"><strong>Prep:</strong> 12mins  | <strong>Cook:</strong> 1hr 30mins</p>
+                <p class="prep-cook-desc">Sisig is a Filipino dish made from pork jowl and ears, pork belly, and chicken liver, which is usually seasoned with calamansi, onions, and chili peppers. 
+                  It originates from the Pampanga region in Luzon. 
+                  Sisig is a staple of Kapampangan cuisine
+                </p>
 
-  <h3>Steps</h3>
-  <ol>
-    <li>Season pork belly slices with salt and pepper. Let it marinate for at least 30 minutes.</li>
-    <li>Grill pork belly until well done. Pork skin should be crispy.</li>
-    <li>Once grilled, chop the pork belly into small fine pieces.</li>
-    <li>In a bowl, combine the chopped meat, onions, lemon juice and chili pepper. Season with soy sauce and pepper.</li>
-    <li>Warm it in a pan with a bit of oil if desired. Alternatively, heat a sizzling plate and add a some butter or margarine. Add the Sisig and top with egg. </li>
-    <li>Serve hot with rice or beer</li>
-  </ol>
+                <div class="recipe-tab-title">
+                  <p class="recipe-tab-link active-link" onclick="opentab('ingredients')"> Ingredients</p>
+                  <p class="recipe-tab-link" onclick="opentab('steps')"> Steps</p>
+                </div>
+
+                <div class="recipe-tab-contents active-tab" id="ingredients">
+                  <ul>
+                    <li>500 grams ppork belly <em>sliced about 1/2 inch thick</em> </li>
+                    <li>salt and pepper</li>
+                    <li>1 red onion <em>finely chopped</em> </li>
+                    <li>1/2 lemon or 3-4 calamansi juice</li>
+                    <li>1-2 chili peppers <em>minced</em> </li>
+                    <li>1/2 tbsp soy sauce</li>
+                    <li>1/8 tsp ground black pepper</li>
+                    <li>egg</li>
+                  </ul>
+                </div>
+
+                <div class="recipe-tab-contents" id="steps">
+                  <ol>
+                    <li>Season pork belly slices with salt and pepper. Let it marinate for at least 30 minutes.</li>
+                    <li>Grill pork belly until well done. Pork skin should be crispy.</li>
+                    <li>Once grilled, chop the pork belly into small fine pieces.</li>
+                    <li>In a bowl, combine the chopped meat, onions, lemon juice and chili pepper. Season with soy sauce and pepper.</li>
+                    <li>Warm it in a pan with a bit of oil if desired. Alternatively, heat a sizzling plate and add a some butter or margarine. Add the Sisig and top with egg. </li>
+                    <li>Serve hot with rice or beer</li>
+                  </ol>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <script>
+
+      var tablinks = document.getElementsByClassName("recipe-tab-link");
+      var tabcontents = document.getElementsByClassName("recipe-tab-contents");
+
+      function opentab(tabname) {
+        for(tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  
+  </main>
+
+  <footer>
+    <p> <strong> The Odin Project </strong>| <strong> Odin Recipe  </strong> | No copyright infringement is intended. I do not own nor claim to own the rights to any of the recipes and images shared. </p>
+  </footer>
+
 </body>
 </html>
